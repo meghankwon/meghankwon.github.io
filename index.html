@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meghan Kwon</title>
+  <style>
+  :root {
+    --background: #fbfaf7;
+    --text: #232733;
+    --muted: #525967;
+    --accent: #244681;
+    --line: #dbdfe6;
+    --placeholder: #eef1f6;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: system-ui, sans-serif;
+    font-size: clamp(1.0625rem, 0.9rem + 0.55vw, 1.5rem);
+    line-height: 1.6;
+  }
+
+  main {
+    width: 100%;
+    padding: clamp(1.5rem, 3vw, 3.5rem)
+             clamp(1rem, 4vw, 5rem)
+             3rem;
+  }
+
+  h1, h2 {
+    font-family: Georgia, serif;
+    line-height: 1.15;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.25rem, 6vw, 5rem);
+  }
+
+  h2 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(1.6rem, 2.8vw, 2.75rem);
+  }
+
+  p { margin: 0 0 1rem; }
+  a { color: var(--accent); text-underline-offset: 0.2em; }
+  a:hover { text-decoration-thickness: 0.15em; }
+
+  .welcome {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 1.15em;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: clamp(10rem, 23vw, 24rem) minmax(0, 1fr);
+    align-items: start;
+    gap: clamp(1.25rem, 3vw, 3.5rem);
+    margin-top: clamp(1.25rem, 2.5vw, 2.5rem);
+  }
+
+  /* Keep paragraphs readable even on an ultrawide screen. */
+  .intro p { max-width: 70ch; }
+
+  .portrait {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 35%;
+    border-radius: 0.5rem;
+  }
+
+  .placeholder {
+    display: grid;
+    place-items: center;
+    background: var(--placeholder);
+    color: var(--muted);
+    border: 1px dashed var(--line);
+  }
+
+  section {
+    margin-top: clamp(1.5rem, 3vw, 3rem);
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+  }
+
+  ul { margin: 0; padding-left: 1.25em; }
+  li + li { margin-top: 0.5rem; }
+
+  @media (max-width: 38rem) {
+    .intro {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .portrait {
+      width: min(65vw, 14rem);
+    }
+  }
+</style>
+</head<body>
+  <main>
+    <header>
+      <h1>Meghan Kwon</h1>
+      <p class="welcome">Hello! Welcome to my website :)</p>
+    </header>
+
+    <div class="intro">
+      <img class="portrait" src="headshot.png" alt="Portrait of Meghan Kwon">
+
+      <div>
+        <p>
+          I’m a third-year PhD student studying <a href="https://math.duke.edu/">Mathematics</a> at Duke University. 
+          I am fortunate to be advised by <a href="https://sites.math.duke.edu/~ciocanel/">Dr. Veronica Ciocanel</a>. 
+        </p>
+
+        <p>
+          I am interested in building mechanistic models to understand the behavior of biological systems over time.
+          I'm currently developing an agent-based model of microtubule dynamics in neurons. 
+          I'm also involved with <a href="https://immunescale.org">MISM</a>, where I work with Drs. <a href="https://biostat.duke.edu/profile/chi-wei-cliburn-chan">Cliburn Chan</a> and <a href="https://science.psu.edu/math/people/jmc90">Jessica Conway</a> on modeling HIV dynamics. 
+        </p>
+
+        <p>  
+          I graduated from the University of Maryland, Baltimore County (UMBC) in 2024, where I was advised by <a href="https://userpages.umbc.edu/~bpeercy/">Dr. Brad Peercy</a>. Go Retrievers!
+        </p>
+
+        <p><a href="Resume_CV__2pages.pdf">View my resume (PDF)</a></p>
+      </div>
+    </div>
+
+    <section>
+      <h2>News</h2>
+      <ul>
+        <!-- Put your newest update first. Copy a <li> to add another. -->
+        <li><strong>November 2026:</strong> I presented my research at the <a href="https://dukemath.pages.oit.duke.edu/tricams/">Triangle Computational and Applied Mathematics Symposium</a>.</li>
+        <li><strong>September 2026:</strong> I presented my research at Duke's Informal Math Bio seminar.</li>
+        <li><strong>September 2026:</strong> I joined Duke's <a href="https://sites.duke.edu/mathdrp/">Directed Reading Program</a> as a mentor, working with an undergraduate on differential equations and mathematical physiology.</li>
+        <li><strong>August 2026:</strong> I became an officer of <a href="https://sites.duke.edu/siam/">Duke's SIAM</a> chapter.</li>
+        <li><strong>August 2026:</strong> I attended and presented my research at the <a href="https://sites.research.uci.edu/fyim/">Find Your Inner Modeler Workshop</a> at UC Irvine.</li>
+        <li><strong>July 2026:</strong> I presented my research at the <a href="https://ecmtb2026.org/">Society for Mathematical Biology Annual Meeting</a> in Graz, Austria.</li>
+        <li><strong>May 2026:</strong> I presented my research at the <a href="https://scholarscompass.vcu.edu/bamm/">Biology and Medicine through Mathematics conference</a> at Virgina Commonwealth University.</li>
+        <li><strong>November 2025:</strong> I presented my research at Duke's Informal Math Bio seminar.</li>
+         <li><strong>November 2025:</strong> My poster on microtubule polarity in neuronal
+      dendrites won the Best Poster Award at the <a href="https://stsynkov.math.ncsu.edu/tricams2025/Home.html">Triangle Computational and Applied Mathematics Symposium</a>.</li>
+      <li><strong>October 2025:</strong> I joined the <a href="https://immunescale.org/">Multiscale Immune Systems Modeling Center</a> at Duke.</li>
+      <li><strong>August 2025:</strong> I presented on <a href="https://academic.oup.com/bioinformatics/article/38/7/1972/6522109">Vivarium</a> at a Computational Biology Reading Group.</li>
+      <li><strong>May 2025:</strong> I started research with <a href="https://sites.math.duke.edu/~ciocanel/">Dr. Veronica Ciocanel</a>.</li>
+      <li><strong>September 2024:</strong> I started my Ph.D. in Mathematics at Duke!</li>
+      </ul>
+    </section>
+
+    <!-- Optional: add sections for Teaching, Publications, or Contact here. -->
+  </main>
+</body>
+</html>
